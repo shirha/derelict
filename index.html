@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>NMS Derelict Freighters</title>
+<style> 
+@font-face {font-family: "NMS Glyphs"; src: url("NMS-Glyphs-Mono.ttf");}
+body {background: #F0F8FF;}
+button {font-size: 18px; font-family: "Arial"; border-width: 1px; border-radius: 5px; margin-left: 2px; vertical-align: text-top; /*padding: 1px 4px;*/}
+.n {
+  font-family: "NMS Glyphs"; font-size: 38px; font-weight: bold; color: #000080;
+  border-radius: 0; border: 0; background-color: #F0F8FF; padding: 0;
+} /* #87CEFA;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;} */
+.sc0,.scy,.scr,.scg,.scb,
+.c0, .c1, .c2, .c3, .c4  {min-width: 32px;}
+.tx,.ta,.tu,.tp,.bm {min-width: 35px;}
+.bm {font-size: 15px; min-height: 25px; vertical-align: text-top; padding: 0 6px 2px 6px;}
+.b,.n,.w {display: inline-block;}
+.b {vertical-align: top; margin-top: 8px;}
+.w {border-bottom: 1px solid #000080;}
+.e0,.sc0,.t0,.hn0,.gj0,.ai0,.c0,.ly0 {background: #EFEFEF; color: black;}
+.e1,.tx {background: #606060; color: white;}
+.t1,.t2,.t3,.scb,.c2 {background: #87CEFA;}
+.scy,.lyn {background: #FFFF00;}
+.scr {background: #FF69B4;}
+.scg,.gj1,.c1 {background: #80ff00;}
+.hn1,.c4,.bm {background: #D2B48C;}
+.ai1,.c3 {background: #EE82EE;}
+.lyn {font-size: 12px; width: 34.7px; height: 25px;}
+.a {  display: flex;  align-items: center;  }
+#dump {background-color: green; color: #F0F8FF;}
+#container {display: none;}
+#splash {position: fixed;}
+/*
+  width: 530px; height: 848px; background-image: url(derelict.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+@media all and (max-width: 800px) {
+  .b button {font-size: 28px;}
+  .b {display: flex; justify-content: space-between; margin: 0 0 10px 0;} 
+  .sc0,.scy,.scr,.scg,.scb {min-width: 39px;}
+  .c0, .c1, .c2, .c3, .c4  {min-width: 34px;}
+  .tx {min-width: 46.7px;}
+  .n {font-family: "NMS Glyphs"; font-size: 40px; color: #000080;  font-weight: bold;}
+  .b button.lyn {font-size: 18px; min-width: 46.2px; min-height: 36px;}
+}
+</style></head><body>
+<!--div class=a><button id=dump>Connected</button></div-->
+<div id="splash"><img src="derelict1.jpg"></div>
+<div id="container"></div>
+<script src="main.js"></script>
+</body></html>
